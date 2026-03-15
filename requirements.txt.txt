@@ -1,0 +1,7 @@
+streamlit
+gymnasium
+numpy
+pandas
+torch
+matplotlib
+pygame
