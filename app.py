@@ -145,7 +145,7 @@ elif secili_mod == "Deep Q-Learning (Çift Ağ)":
         gamma_dqn = st.slider("İndirim Faktörü (Gamma)", 0.1, 1.0, 0.95) [cite: 42]
         target_update_freq = st.slider("Hedef Ağ Güncelleme Sıklığı", 1, 50, 10) [cite: 42]
 
-    if st.button("🚀 Çift Ağlı DQN Eğitimi Başlat"): [cite: 43]
+    if st.button("🚀 Çift Ağlı DQN Eğitimi Başlat"):
         env = gym.make("FrozenLake-v1", desc=st.session_state.random_map, is_slippery=is_slippery, render_mode="rgb_array")
         state_size = env.observation_space.n
         action_size = env.action_space.n
